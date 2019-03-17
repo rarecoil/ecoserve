@@ -1,0 +1,25 @@
+# get more memory back from the GPU we aren't using
+gpu_mem=16
+
+# set arm frequency to be lower than stock.
+# this gives us a little slow governor ramp-up and
+# may drop some initial packets in case of HUGE
+# immediate load.
+arm_freq_min=100
+
+# undervolt the core for power savings.
+# this is as stable as I could get my pi3.
+# any more and nginx would fall over at high load
+over_voltage=-1
+
+# disable wifi and bluetooth for powersave. we need neither
+dtoverlay=pi3-disable-wifi
+dtoverlay=pi3-disable-bt
+
+# PI 3
+# overlock SD card for better I/O. Works fine with UHS-1
+# cards and we don't hammer it with writes too much anyway.
+dtoverlay=sdhost,overclock_50=100
+
+# load linux
+initramfs initramfs-linux.img followkernel

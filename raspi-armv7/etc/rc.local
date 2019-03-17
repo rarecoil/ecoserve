@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# disable hdmi for power
+# some people have said to use `vcgencmd display_power=0. This does not disable the hardware.`
+/opt/vc/bin/tvservice -o
