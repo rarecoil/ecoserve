@@ -28,13 +28,17 @@ The reduction angle is the primary angle behind the ecoserve project - it is not
 
 ## What about the cloud?
 
-Cloud platforms benefit from scale, but who your platform is seems to matter a lot for overall sustainability and carbon emissions practices. As of the time of this writing 9 February 2019:
+Cloud platforms benefit from scale, but who your platform is seems to matter a lot for overall sustainability and carbon emissions practices. As of the time of this writing 5 June 2019:
 
 * [Google Cloud Platform](https://cloud.google.com/sustainability/) is 100% renewable energy backed, using solar and RECs.
 * [Amazon Web Services](https://aws.amazon.com/about-aws/sustainability/#progress) is 50% renewable, not much better than PG&E. uses renewable energy in the NoVA `us-east` region. `us-west` is offset.
 * [Microsoft Azure](https://blogs.microsoft.com/on-the-issues/2018/03/21/new-solar-deal-moves-us-ahead-of-schedule-in-creating-a-cleaner-cloud/) targeted 50% renewable in 2018 and 60% by 2020, leaving it mostly on par with AWS.
 * [Cloudflare](https://blog.cloudflare.com/a-carbon-neutral-north-america/) purchases RECs (renewable energy credits), similar to those offered to customers of specific utilities.
-* Cheap hacker favorite cloud provider [Hetzner](https://www.hetzner.com/) uses [hydropower and wind power](https://www.hetzner.com/unternehmen/umweltschutz/) at their German and Finnish data centers, respectively.
+* Cheap hacker favorite cloud provider [Hetzner](https://www.hetzner.com/) uses [hydropower and wind power](https://www.hetzner.com/unternehmen/umweltschutz/) at their German and Finnish data centers, respectively. Using the [Server Auction](https://www.hetzner.com/sb) you can get some good deals on older hardware. Intel Haswell and above allows undervolting, so you can eke out more performance-per-watt with these dedicated boxes and keep them from getting recycled.
+
+Before this research, I used [Digital Ocean](https://www.digitalocean.com/). Some other DO users have chimed in on [the DigitalOcean idea that exists regarding this](https://ideas.digitalocean.com/ideas/DO-I-1007), but CEO Moisey Uretsky seems to have posted at some point and there's not much DO can do since they don't own their data centers. It's best to avoid DO.
+
+[Linode](https://linode.com/) should also be avoided, as they suffer the same issues. They are silent on renewable power, too.
 
 > *If you have more information, please issue a pull request to this document.*
 
